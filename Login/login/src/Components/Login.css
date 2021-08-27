@@ -1,0 +1,78 @@
+.login-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.receipt{
+    height: 100%;
+    background: linear-gradient(
+    90deg, #FEFF00 64.4%, #FFFFFF 50%);
+}
+
+table, th, td{
+  border: 1px solid black;
+}
+
+.container{
+  overflow: hidden;
+  margin: 15px 5px 0 10px;
+}
+
+.p1{
+float: left;
+}
+
+.p2{
+float: right;
+}
+
+#inputdef{
+  margin-bottom: 20px;
+}
+
+label{
+  clear: left;
+  width: 75px;
+  text-align: right;
+}
+
+
+input, label {
+display: inline-block;
+float: left;
+padding-right: 12px;
+}
+
+.blank-td{
+  height: 450px;
+}
+
+.dark-header{
+  color:yellow;
+  background-color: black;
+}
+
+.nest-table{
+  width: 64.5%;
+  margin-top: 0px;
+  font-size: 0.8em;
+  border: 1px;
+  border: 1px solid black;
+}
+
+.nest-tr{
+  align-items: center;
+}
+
+.item{
+  padding:2.5px; width: 10%;
+}
+
+.despt{
+  padding:2.5px; width: 55%;
+}
+
+.qnty{
+  padding:2.5px;
+}
