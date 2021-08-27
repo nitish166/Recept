@@ -1,0 +1,2 @@
+# Recept
+computerized receipt software
