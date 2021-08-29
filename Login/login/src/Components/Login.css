@@ -14,6 +14,22 @@ table, th, td{
   border: 1px solid black;
 }
 
+h1, h2, h3{
+  text-align: center;
+}
+
+h1{
+  font-size: 1.75rem;
+}
+
+h2{
+  font-size: 2rem;
+}
+
+h3{
+  font-size: 1.10rem;
+}
+
 .container{
   overflow: hidden;
   margin: 15px 5px 0 10px;
@@ -41,11 +57,15 @@ label{
 input, label {
 display: inline-block;
 float: left;
-padding-right: 12px;
+padding-right: 5px;
 }
 
 .blank-td{
   height: 450px;
+}
+
+.blank-total-td{
+  height: 22px;
 }
 
 .dark-header{
@@ -61,18 +81,62 @@ padding-right: 12px;
   border: 1px solid black;
 }
 
+.nested-table{
+    width: 100%;
+    margin-top: 450Px;
+}
+
+.total-td{
+  text-align: center;
+}
+
 .nest-tr{
   align-items: center;
 }
 
 .item{
-  padding:2.5px; width: 10%;
+  width: 10%;
 }
 
 .despt{
-  padding:2.5px; width: 55%;
+  width: 55%;
 }
 
-.qnty{
-  padding:2.5px;
+.qnty, .item, .despt{
+  text-align: center;
+}
+
+.size-control{
+  margin-top: 450px;
+  width: 117px;
+}
+
+.snd-size-control{
+  margin-top: 450px;
+  width: 90px;
+}
+
+.Ruppes{
+    width: 110px;
+    margin-top: 20px;
+}
+
+#ruppes{
+  margin-top: 20px;
+  width: 350px;
+  margin-left: 5px;
+}
+
+.tution-fee{
+    width: 206px;
+    margin-top: 20px;
+}
+
+.signature{
+  width: 500px;
+  margin-top: 20px;
+}
+
+.total{
+  font-weight: bold;
 }

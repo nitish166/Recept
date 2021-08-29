@@ -22,7 +22,7 @@ class Dashboard extends Component {
                     <tr>
                         <th>
                             <div className="container">
-                                <div className="col-md-12 p1">
+                                <div className="col-md-8 p1">
                                     <label for="no">SNo : </label>
                                     <input type="number" id="inputdef" /><br/>
                                     <label for="name">Name : </label>
@@ -34,7 +34,7 @@ class Dashboard extends Component {
                                     <label for="dues">Total Dues : </label>
                                     <input type="number" id="inputdef" />
                                 </div>
-                                <div className="col-md-12 p2">
+                                <div className="col-md-4 p2">
                                     <label for="date">Date : </label>
                                     <input type="date" id="inputdef" /><br />
                                     <label for="roolnumber">Roll No : </label>
@@ -60,17 +60,49 @@ class Dashboard extends Component {
                         </tr>
                         
                         <tr>
-                            <th>Rs.</th>
-                            <th>P.</th>
+                            <th className="qnty">Rs.</th>
+                            <th className="qnty">P.</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td className="blank-td"></td>
                             <td className="blank-td"></td>
-                            <td className="blank-td"></td>
-                            <td className="blank-td"></td>
-                            <td className="blank-td"></td>
+                            <td className="blank-td">
+                                <table className="nested-table">
+                                    <tbody>
+                                        <tr>
+                                            <td className="total-td">
+                                               <label for="total" className="total">Total</label>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td className="blank-td">
+                            <input type="number" id="total" className="size-control"></input>
+                                {/* <table className="nested-table">
+                                        <tbody>
+                                            <tr>
+                                                <td className="blank-total-td">
+                                                    <input type="number" id="total"></input>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                </table> */}
+                            </td>
+                            <td className="blank-td">
+                            <input type="number" id="total" className="snd-size-control"></input>
+                                {/* <table className="nested-table">
+                                        <tbody>
+                                            <tr>
+                                                <td className="blank-total-td">
+                                                    <input type="number" id="total"></input>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                </table> */}
+                            </td>
                         </tr>    
                     </tbody>
                 </table>
@@ -80,7 +112,7 @@ class Dashboard extends Component {
                         <th>
                             <div className="paragraph">
                                     <p className="p1">
-                                        <label for="ruppes">Rupees in words: </label>
+                                        <label for="ruppes" className="Ruppes">Rupees in words: </label>
                                         <input type="text" id="ruppes" /><br/>
                                     </p>
                             </div>
@@ -90,11 +122,11 @@ class Dashboard extends Component {
                         <th>
                             <div className="paragraph">
                                     <p className="p1">
-                                        <label for="fee">Note: Tution Fee Not Refundable </label>
+                                        <label for="fee" className="tution-fee">Note: Tution Fee Not Refundable </label>
                                         <br/>
                                     </p>
                                     <p className="p2">
-                                        <label for="sign">Receiver Signature </label>   
+                                        <label for="sign" className="signature">Receiver Signature </label>   
                                     </p>
                             </div>
                         </th>
